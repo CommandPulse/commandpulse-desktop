@@ -5,7 +5,7 @@ const { autoUpdater } = require('electron-updater');
 let mainWindow;
 let tray;
 
-const APP_URL = 'https://commandpulse.app';
+const APP_URL = 'https://botcommandpulse.com';
 
 const isDev = process.argv.includes('--dev');
 
