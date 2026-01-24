@@ -23,9 +23,12 @@ function createWindow() {
       webSecurity: true,
     },
     show: false,
+    autoHideMenuBar: true,
     backgroundColor: '#0f172a',
     titleBarStyle: process.platform === 'darwin' ? 'hiddenInset' : 'default',
   });
+  
+  Menu.setApplicationMenu(null);
 
   mainWindow.loadURL(isDev ? 'http://localhost:5000' : APP_URL);
 
